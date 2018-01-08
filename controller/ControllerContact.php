@@ -15,6 +15,6 @@ class ControleurContact{
     public function contact($idContact) {
         $contact= $this->contact->getContact($idContact);
         $vue = new View("Contact");
-        $vue->generer(array('billet' => $contact));
+        $vue->generer(array('contact' => $contact));
     }
     }

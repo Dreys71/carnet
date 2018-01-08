@@ -15,6 +15,6 @@ class Contact extends Modele {
         if (!empty($contact))
             return $contact->fetch();
         else
-            throw new Exception("Aucun billet ne correspond à l'identifiant '$idContact'");
+            throw new Exception("Aucun contact ne correspond à l'identifiant '$idContact'");
     }
 }

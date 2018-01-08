@@ -13,7 +13,7 @@
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4"><?= $contact['nom'] .' '. $contact['prenom'] ?><i class="material-icons right">more_vert</i></span>
-                    <p><a href="<?= "index.php?action=billet&id=" . $contact['id'] ?>">Voir le profil</a></p>
+                    <p><a href="<?= "index.php?action=contact&id=" . $contact['id'] ?>">Voir le profil</a></p>
                 </div>
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"><?= $contact['nom'] .' '. $contact['prenom'] ?><i class="material-icons right">close</i></span>
