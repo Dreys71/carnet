@@ -1,7 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: bapti
- * Date: 08/01/2018
- * Time: 14:36
- */
+require 'controller/Route.php';
+
+$routeur = new Routeur();
+$routeur->routerRequete();
