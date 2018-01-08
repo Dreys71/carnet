@@ -1,0 +1,15 @@
+.sidenav-overlay {
+    opacity: 0!important;
+    position: inherit!important;
+}
+header {
+    margin-bottom:15px;
+}
+.edit-link {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.bold {
+    font-weight: bold;
+}
