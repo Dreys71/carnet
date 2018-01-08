@@ -1,5 +1,5 @@
 <?php
 require 'controller/Route.php';
 
-$routeur = new Routeur();
+$routeur = new Route();
 $routeur->routerRequete();
