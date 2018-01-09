@@ -20,8 +20,6 @@
                     <p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">email</i><?= $contact['mail'] ?>
                     <p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">phone</i><?= $contact['tel'] ?>
                     <p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">business</i><?= $contact['society'] ?>
-                    <p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">location_on</i><?= $contact['adress'] ?>
-                    <p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">location_on</i><?= $contact['zipcode'].' '.$contact['city'].' '. $contact['country']?>
                         <a class="edit-link valign-wrapper orange-text" href="<?= "index.php?action=edit&id=" . $contact['id'] ?>">Modifier <i class="material-icons">edit</i></a></p>
                 </div>
             </div>
