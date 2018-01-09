@@ -7,7 +7,7 @@
         <div class="col s12">
         <?php foreach ($contacts as $contact):
             ?>
-            <div class="card col s12 l4 xl3">
+            <div class="card col s12 l4 xl3" style="margin: 2px">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="<?= $contact['img_link']?>">
                 </div>

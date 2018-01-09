@@ -29,6 +29,12 @@ class Route {
                 else
                     throw new Exception("Action non valide");
             }
+            elseif (isset($_GET['add'])){
+                if (!empty($_POST)){
+                    $this->ctrlContact->contactform($_POST);
+                    $this->ctrlAccueil->accueil();
+                }
+            }
             else {  // aucune action définie : affichage de l'accueil
                 $this->ctrlAccueil->accueil();
             }
