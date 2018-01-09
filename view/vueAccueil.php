@@ -9,7 +9,7 @@
             ?>
             <div class="card col s12 l4 xl3">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="https://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png">
+                    <img class="activator" src="<?= $contact['img_link']?>">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4"><?= $contact['nom'] .' '. $contact['prenom'] ?><i class="material-icons right">more_vert</i></span>
@@ -18,6 +18,10 @@
                 <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"><?= $contact['nom'] .' '. $contact['prenom'] ?><i class="material-icons right">close</i></span>
                     <p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">email</i><?= $contact['mail'] ?>
+                    <p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">phone</i><?= $contact['tel'] ?>
+                    <p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">business</i><?= $contact['society'] ?>
+                    <p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">location_on</i><?= $contact['adress'] ?>
+                    <p class="valign-wrapper"><i class="material-icons" style="margin-right: 5px;">location_on</i><?= $contact['zipcode'].' '.$contact['city'].' '. $contact['country']?>
                         <a class="edit-link valign-wrapper orange-text" href="<?= "index.php?action=edit&id=" . $contact['id'] ?>">Modifier <i class="material-icons">edit</i></a></p>
                 </div>
             </div>
