@@ -23,4 +23,9 @@ class Contact extends Modele {
         $a = ["nom" => $nom,"prenom"=>$prenom,"mail"=>$mail,"tel"=>$tel,"img_link"=>$image,"society"=>$society,"adress"=>$adress,"zipcode"=>$zipcode,"city"=>$city,"country"=>$country];
         $req = $this->executerRequete($sql,$a);
     }
+    public function editContact($id,$nom,$prenom,$mail,$tel,$image,$society,$adress,$zipcode,$city,$country){
+        $sql = 'UPDATE contact SET nom = :nom, prenom = :prenom, mail = :mail, tel = :tel,img_link = :img_link, society = :society, adress = :adress, zipcode = :zipcode , city = :city, country = :country WHERE id = :id';
+        $a = ["nom" => $nom,"prenom"=>$prenom,"mail"=>$mail,"tel"=>$tel,"img_link"=>$image,"society"=>$society,"adress"=>$adress,"zipcode"=>$zipcode,"city"=>$city,"country"=>$country,"id" => $id];
+        $req = $this->executerRequete($sql,$a);
+    }
 }

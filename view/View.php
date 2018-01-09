@@ -6,7 +6,6 @@ class View {
     public function __construct($action) {
         $this->fichier = "view/vue" . $action . ".php";
     }
-
     // Génère et affiche la vue
     public function generer($donnees) {
         // Génération de la partie spécifique de la vue

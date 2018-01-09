@@ -26,6 +26,14 @@ class Route {
                     $vue = new View("Addcontact");
                     $vue->generer(array());
                 }
+                elseif ($_GET['action'] == 'edit' ){
+                    $idContact = intval($this->getParametre($_GET, 'id'));
+                    if ($idContact != 0) {
+                        $this->ctrlContact->contactedit($idContact);
+                    }
+                    else
+                        throw new Exception("Identifiant du contact non valide");
+                }
                 else
                     throw new Exception("Action non valide");
             }

@@ -18,6 +18,12 @@ class ControleurContact{
         $vue->generer(array('contact' => $contact));
     }
 
+    public function contactedit($idContact) {
+        $contact= $this->contact->getContact($idContact);
+        $vue = new View("Editcontact");
+        $vue->generer(array('contact' => $contact));
+    }
+
     public function contactform($ins){
         $a  = 'Contact ajouté';
         if(!empty($ins['nom'])){$nom = htmlentities($ins['nom']);}else{$nom = '';}
