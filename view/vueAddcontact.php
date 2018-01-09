@@ -16,6 +16,10 @@
                 <label for="mail">Mail</label>
             </div>
             <div class="col s12 l6 input-field">
+                <input type="text" id="tel" name="tel">
+                <label for="tel">Télephone</label>
+            </div>
+            <div class="col s12 l6 input-field">
                 <input type="text" id="img" name="image">
                 <label for="img">Lien de l'image</label>
             </div>
