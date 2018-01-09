@@ -22,6 +22,10 @@ class Route {
                     else
                         throw new Exception("Identifiant du contact non valide");
                 }
+                elseif ($_GET['action'] == 'addcontact' ){
+                    $vue = new View("Addcontact");
+                    $vue->generer(array());
+                }
                 else
                     throw new Exception("Action non valide");
             }

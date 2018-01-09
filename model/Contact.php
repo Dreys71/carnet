@@ -17,4 +17,10 @@ class Contact extends Modele {
         else
             throw new Exception("Aucun contact ne correspond à l'identifiant '$idContact'");
     }
+
+    public function addContact($nom,$prenom,$mail,$tel,$image,$society,$adress,$zipcode,$city,$country){
+        $sql = 'INSERT INTO contact(nom,prenom,mail,tel,img_link,society,adress,zipcode,city,country) VALUES(:nom,:prenom,:mail,:tel,:img_link,:society,:adress,:zipcode,:city,:country)';
+        $a = ["nom" => $nom,"prenom"=>$prenom,"mail"=>$mail,"tel"=>$tel,"img_link"=>$image,"society"=>$society,"adress"=>$adress,"zipcode"=>$zipcode,"city"=>$city,"country"=>$country];
+        $req = $this->executerRequete($sql,$a);
+    }
 }
