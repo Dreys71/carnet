@@ -37,6 +37,9 @@
 <script>
     $(document).ready(function(){
         $('.sidenav').sidenav();
+        $('#img').on('change',function () {
+            $('.preview').attr('src',$(this).val()) ;
+        });
     });
 </script>
 </html>

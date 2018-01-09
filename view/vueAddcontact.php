@@ -20,8 +20,13 @@
                 <label for="tel">Télephone</label>
             </div>
             <div class="col s12 l6 input-field">
-                <input type="text" id="img" name="image">
-                <label for="img">Lien de l'image</label>
+                <div class="col s4">
+                    <img class="preview" width="100%" src="https://cdn.shopify.com/s/files/1/1211/8882/products/what_Morty_Web_1024x1024.jpg?v=1503605193">
+                </div>
+                <div class="col s8">
+                    <input type="text" id="img" name="image">
+                    <label for="img">Lien de l'image</label>
+                </div>
             </div>
             <div class="col s12 l6 input-field">
                 <input type="text" id="society" name="society">
