@@ -13,7 +13,7 @@
     <div class="navbar-fixed">
         <nav class="gradient-45deg-green-teal">
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Carnet</a>
+                <a href="index.php" class="brand-logo">Carnet</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.php">Accueil</a></li>
