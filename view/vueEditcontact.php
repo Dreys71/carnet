@@ -2,8 +2,8 @@
 
 <div class="row">
     <div class="col s12 l10 offset-l1">
-        <form method="post" action="index.php?saved">
-            <input type="hidden" value="<?= $contact['id']?>">
+        <form method="post" action="index.php?add">
+            <input type="hidden" name="id" value="<?= $contact['id']?>">
             <div class="col s12 l6 input-field">
                 <input type="text" id="nom" name="nom" value="<?= $contact['nom']?>">
                 <label for="nom">Nom</label>

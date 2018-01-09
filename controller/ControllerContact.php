@@ -30,12 +30,18 @@ class ControleurContact{
         if(!empty($ins['prenom'])){$prenom = htmlentities($ins['prenom']);}else{$prenom = '';}
         if(!empty($ins['mail'])){$mail = htmlentities($ins['mail']);}else{$mail = '';}
         if(!empty($ins['tel'])){$tel = htmlentities($ins['tel']);}else{$tel = '';}
-        if(!empty($ins['image'])){$img = htmlentities($ins['img']);}else{$img = 'https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-384586.png';}
+        if(!empty($ins['image'])){$img = htmlentities($ins['image']);}else{$img = 'https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-384586.png';}
         if(!empty($ins['society'])){$society = htmlentities($ins['society']);}else{$society = '';}
         if(!empty($ins['adress'])){$adress = htmlentities($ins['adress']);}else{$adress = '';}
         if(!empty($ins['zipcode'])){$zipcode = htmlentities($ins['zipcode']);}else{$zipcode = '';}
         if(!empty($ins['city'])){$city = htmlentities($ins['city']);}else{$city = '';}
         if(!empty($ins['country'])){$country = htmlentities($ins['country']);}else{$country = '';}
-        $req = $this->contact->addContact($nom,$prenom,$mail,$tel,$img,$society,$adress,$zipcode,$city,$country);
+        if(!empty($ins['id'])){
+            $req = $this->contact->editContact($ins['id'],$nom,$prenom,$mail,$tel,$img,$society,$adress,$zipcode,$city,$country);
+        }
+        else {
+            $req = $this->contact->addContact($nom,$prenom,$mail,$tel,$img,$society,$adress,$zipcode,$city,$country);
+        }
+
     }
     }
